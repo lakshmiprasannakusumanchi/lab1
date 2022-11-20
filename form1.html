@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function add()
+{
+  let a,b,c;
+  a=f.e1.value;
+  b=f.e2.value;
+  c=a+b;
+  if(a==""){
+   alert("fill the text box");
+   document.getElementById("s1").innerHTML="<font color='red'>*reqiured</font>"}
+  document.getElementById("t").innerHTML=("<table border='1'><tr><th>1st</th><th>2nd</th><th>sum</th></tr><tr><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td></tr></table>");
+  
+}
+</script>
+</head>
+<body>
+<form name="f"><table>
+<tr><td>First name</td><td><input type="text" id="e1" /><span id="s1"></span></td></tr>
+<tr><td>Second name</td><td><input type="text" id="e2" /></td></tr>
+<tr><td>gender</td><td><input type="radio" value="male" name="t1">male</input></td>
+<td><input type="radio" value="female" name="t1">female</input></td></tr>
+<tr><td>age<input type="number" min=18 max=30></td></tr>
+<tr><td><input type="button" name="c" value="add" onclick="add()"></input></td></tr>
+<tr><td><input type="reset" name="d" value="clear"/></td></tr>
+<tr><td><span id="t"></span></td></tr></table>
+</form>
+</body>
+</html>

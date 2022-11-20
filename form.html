@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function add()
+{ 
+  let e,d,c;
+  c=f.a.value;
+  d=f.b.value;
+  e=d+c;
+  alert("add is"+e);
+}
+</script>
+</head>
+<body>
+<form name="f">
+First name<input type="text" id="a" /><br>
+Second name<input type="text" id="b" /><br>
+<input type="button" name="c" value="add" onclick="add()"/>
+<input type="reset" name="d" value="clear"/>
+<span id="t"></span>
+<script> add() </script></form>
+</body>
+</html>
